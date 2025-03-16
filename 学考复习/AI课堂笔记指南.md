@@ -1,5 +1,5 @@
 
-# 课堂电子笔记流程 {ignore=true}
+# 课堂电子笔记流程  {ignore:true}
 #### 1. 初步梳理
 根据学案内容，初步梳理知识框架
 #### 2. AI生成笔记
@@ -7,7 +7,7 @@
    - 根据学习任务和学习目标，选择不同AI指令模板，补充必要信息。
    - 指定输出格式为Markdown格式，便于后续整理输出。
    - 通过追问AI完善知识框架。
-     > AI指令模板参考[《AI辅助学习指令模板参考手册（中学版）》](#ai辅助学习指令模板参考手册中学版)
+     > AI指令模板参考[《AI辅助学习指令模板参考手册（中学版）》](#ai辅助学习指令模板参考手册（中学版）)
 
 #### 3. 整理输出
    - 整理输出为Markdown格式，方便后续学习。
@@ -16,7 +16,7 @@
      - [Markdown在线编辑器2](https://tool.lu/markdown/)
    - 整理输出为脑图格式，方便后续学习。
      - [Mermaid在线脑图](https://mermaid.live/edit#示例代码)
-     - [Markdown思维脑图](https://www.jyshare.com/front-end/9692/)
+     - [Markdown思维导图](https://www.jyshare.com/front-end/9692/)
    - 整理输出为PDF格式，方便后续学习。
   
 #### 4. 保存笔记
@@ -26,7 +26,7 @@
 --- 
 
 
-# AI辅助学习指令模板参考手册（中学版）{ignore=true}
+# AI辅助学习指令模板参考手册（中学版） {ignore:true}
 
 [TOC]
 
