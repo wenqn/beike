@@ -3,7 +3,8 @@
 - 学会使用AI提示词进行知识总结
 - 通过AI提示词整理已学python知识图谱
 ## 资源
-- [AI课堂笔记指南](https://github.com/wenqn/beike/blob/main/%E5%AD%A6%E8%80%83%E5%A4%8D%E4%B9%A0/AI%E8%AF%BE%E5%A0%82%E7%AC%94%E8%AE%B0%E6%8C%87%E5%8D%97.md)
+- [AI课堂笔记指南](https://github.com/wenqn/beike/blob/main/%E5%AD%A6%E8%80%83%E5%A4%8D%E4%B9%A0/AI%E8%AF%BE%E5%A0%82%E7%AC%94%E8%AE%B0%E6%8C%87%E5%8D%97.md)（Github）
+- [AI课堂笔记指南](https://gitlab.com/zhangwenqn/beike/-/blob/main/%E5%AD%A6%E8%80%83%E5%A4%8D%E4%B9%A0/AI%E8%AF%BE%E5%A0%82%E7%AC%94%E8%AE%B0%E6%8C%87%E5%8D%97.md)（GitLab）
 - [Mermaid 在线思维导图](https://mermaid.live/edit#示例代码)
 - [百度DeepSeek R1满血版](http://chat.baidu.com)
 - [Markdown在线编辑器1](https://www.jyshare.com/front-end/712/)
