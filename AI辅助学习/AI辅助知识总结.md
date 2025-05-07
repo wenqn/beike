@@ -3,7 +3,7 @@
 - 学会使用AI提示词进行知识总结
 - 通过AI提示词整理已学python知识图谱
 ## 资源
-- [AI课堂笔记指南](https://github.com/wenqn/beike/blob/main/%E5%AD%A6%E8%80%83%E5%A4%8D%E4%B9%A0/AI%E8%AF%BE%E5%A0%82%E7%AC%94%E8%AE%B0%E6%8C%87%E5%8D%97.md)（Github）
+- [AI课堂笔记指南](https://github.com/wenqn/beike/blob/main/AI%E8%BE%85%E5%8A%A9%E5%AD%A6%E4%B9%A0/AI%E8%AF%BE%E5%A0%82%E7%AC%94%E8%AE%B0%E6%8C%87%E5%8D%97.md)（Github）
 - [AI课堂笔记指南](https://gitlab.com/zhangwenqn/beike/-/blob/main/%E5%AD%A6%E8%80%83%E5%A4%8D%E4%B9%A0/AI%E8%AF%BE%E5%A0%82%E7%AC%94%E8%AE%B0%E6%8C%87%E5%8D%97.md)（GitLab）
 - [Mermaid 在线思维导图](https://mermaid.live/edit#示例代码)
 - [百度DeepSeek R1满血版](http://chat.baidu.com)
@@ -24,7 +24,7 @@
    - 3道难度递增的练习题（附答案关键步骤）   
 4. 每个知识点提供解释+案例+练习题
 5. 生成mermaid语法思维导图指令
-5. 提供延伸训练建议（如针对{{薄弱点}}的专题资源链接）。
+6. 提供延伸训练建议（如针对{{薄弱点}}的专题资源链接）。
 ```
 3. 等待AI生成知识总结文档
 4. 整理输出为Markdown格式，方便后续学习。
