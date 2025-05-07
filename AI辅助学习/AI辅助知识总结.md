@@ -7,6 +7,7 @@
 - [AI课堂笔记指南](https://gitlab.com/zhangwenqn/beike/-/blob/main/%E5%AD%A6%E8%80%83%E5%A4%8D%E4%B9%A0/AI%E8%AF%BE%E5%A0%82%E7%AC%94%E8%AE%B0%E6%8C%87%E5%8D%97.md)（GitLab）
 - [Mermaid 在线思维导图](https://mermaid.live/edit#示例代码)
 - [百度DeepSeek R1满血版](http://chat.baidu.com)
+- [豆包网页版](https://www.doubao.com/chat/)
 - [Markdown在线编辑器1](https://www.jyshare.com/front-end/712/)
 - [Markdown在线编辑器2](https://tool.lu/markdown/)
 ## 操作
@@ -39,6 +40,7 @@
 #### 1. 输出内容不完整，缺少部分知识点。
    - 检查提示词是否完整，是否包含所有需要总结的知识点。尽量明确列出每个知识点，避免笼统描述。
    - AI会压缩过长的输出内容，尝试在提示词中明确要求“完整输出所有内容”，但仍可能会被压缩输出。这种情况下需要多次对话，直到输出完整内容。然后再整理输出完整文档。
+   - 尝试更换其他AI。
 
 #### 2. 输出内容过于简单，缺少详细解释和案例。
    - 检查提示词是否明确要求“详细解释和案例”。
