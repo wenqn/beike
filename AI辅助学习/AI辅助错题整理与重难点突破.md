@@ -1,7 +1,6 @@
 # AI辅助错题整理与重难点突破
 ## 目标
 - 学会使用AI提示词进行错题整理和重难点突破
-- 通过AI提示词整理错题
 ## 资源
 - [AI课堂笔记指南](https://github.com/wenqn/beike/blob/main/AI%E8%BE%85%E5%8A%A9%E5%AD%A6%E4%B9%A0/AI%E8%AF%BE%E5%A0%82%E7%AC%94%E8%AE%B0%E6%8C%87%E5%8D%97.md)（Github）
 - [AI课堂笔记指南](https://gitlab.com/zhangwenqn/beike/-/blob/main/%E5%AD%A6%E8%80%83%E5%A4%8D%E4%B9%A0/AI%E8%AF%BE%E5%A0%82%E7%AC%94%E8%AE%B0%E6%8C%87%E5%8D%97.md)（GitLab）
@@ -77,3 +76,5 @@ def func(n):
 4. 整理完成后，复制AI输出内容，粘贴到Markdown编辑器中，进一步完善笔记内容与格式。
 5. 可以分次处理，每次处理1-3道重难点，直到完成所有重难点整理。然后再合并整理输出完整文档。
 6. 保存笔记, 上传至自己的云空间或云笔记软件中。
+
+## [问题](./AI辅助知识总结.md#问题)
