@@ -1,0 +1,127 @@
+## 局域网组网技术与互联网接入方式
+
+[TOC]
+
+一、导语
+
+> 据报道，在2018年平均每人每天中，将花6个小时在网络上。人们对美好生活的向往化成一根根网线，你在这头，互联网在那头。
+
+互联网由大大小小的不同局域网互联而来，局域网是指覆盖几米到10公里范围的网络，它如何组成的？
+
+二、局域网组网技术
+
+典型的局域网组网技术包括以太网、令牌环、令牌总线、光纤分布式数据接口等。当前大部分局域网技术已经淘汰（曾经有一二十种之多），只留下IEEE802.3以太网（Ethernet）。
+
+以太网出现于1976年，当时速率只有2.94Mbps，使用同轴电缆作为传输介质。现在普遍使用双绞线或光纤，速度达到万兆级别
+
+> **以太** ：亚里士多德曾经假象过的一种物质，19世纪的物理学家认为电磁波通过以太传播，后来证明并不存在。以太网的发明者寓意互联网中的信息像古老的以太理论一样，通过以太传遍整个宇宙。
+
+1. 局域网的组网要素
+
+ 典型的以太网由终端设备、传输介质、网络设备和相关软件组成。
+
+1.1传输介质
+
+ 早期的以太网使用同轴电缆（有线电视使用的电缆），后来被双绞线所取代。目前为止，双绞线仍是以太网中最基本最常用的电缆。
+
+> **双绞线：** 分1,2,3,4,5,6,7类，数字越大，技术越先进，价格也越高。最常用的是5类双绞线，最大网段长度100m，最高传输速率100Mbps。由4对8根带绝缘皮的铜线拧绞而成。**光纤：** 分多模光纤和单模光纤。目前应用最广泛的是单模光纤。纤芯约10μm，具有重量轻，带宽高，低损耗，高保真的特点。
+
+1.2 网络设备：用来扩展网络的设备
+
+ 网线过长会造成信号衰减，需要通过网络设备来扩展网络，常用的网络设备有交换机和路由器。
+
+1.2.1 **集线器** 
+
+一种简单扩展网络的设备，集线器连接的所有主机称为冲突域。一个站点发送数据时，其他主机不能同时发送，否则会冲突
+
+![](https://tcs.teambition.net/storage/312l3e2e22e4bc0253c6fdd67c6dc3df6b34?Signature=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJBcHBJRCI6IjU5Mzc3MGZmODM5NjMyMDAyZTAzNThmMSIsIl9hcHBJZCI6IjU5Mzc3MGZmODM5NjMyMDAyZTAzNThmMSIsIl9vcmdhbml6YXRpb25JZCI6IiIsImV4cCI6MTY3NTI5OTQyNywiaWF0IjoxNjc0Njk0NjI3LCJyZXNvdXJjZSI6Ii9zdG9yYWdlLzMxMmwzZTJlMjJlNGJjMDI1M2M2ZmRkNjdjNmRjM2RmNmIzNCJ9.Gh4gE8dGyiL5CElpfVnZyyn7onB7P_9c0uM5sh3xLX4&download=2_%E9%9B%86%E7%BA%BF%E5%99%A8.jpg "")
+
+ 
+
+![](https://tcs.teambition.net/storage/312l3e7cb57b75bc8a013b453268805c11f0?Signature=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJBcHBJRCI6IjU5Mzc3MGZmODM5NjMyMDAyZTAzNThmMSIsIl9hcHBJZCI6IjU5Mzc3MGZmODM5NjMyMDAyZTAzNThmMSIsIl9vcmdhbml6YXRpb25JZCI6IiIsImV4cCI6MTY3NTI5OTQyNywiaWF0IjoxNjc0Njk0NjI3LCJyZXNvdXJjZSI6Ii9zdG9yYWdlLzMxMmwzZTdjYjU3Yjc1YmM4YTAxM2I0NTMyNjg4MDVjMTFmMCJ9.FUmAxkMa_zrwM8nb52FwWN4695D1-sh2AtKRRdREasc&download=2_%E9%9B%86%E7%BA%BF%E5%99%A8%E5%86%B2%E7%AA%81%E5%9F%9F.jpg "")
+
+1.2.2 **交换机** 
+
+ 交换机比集线器多了地址转发表，因此支持并发通信。交换机连接的所有主机叫做广播域。可以只向特定的主机转发数据，也可以向所连接的所有主机转发数据。一个端口的数据被复制到交换机所有端口时，这样的数据被称为广播帧。广播帧在以太网中是正常且不可避免要存在的。但广播帧会无条件向所有端口转发，当广播帧较多时（有些网络攻击会故意这样做），会造成带宽浪费，甚至形成网络风暴。
+
+ 
+
+![](https://tcs.teambition.net/storage/312l31d327afc259861fc972f2331a7ff9e0?Signature=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJBcHBJRCI6IjU5Mzc3MGZmODM5NjMyMDAyZTAzNThmMSIsIl9hcHBJZCI6IjU5Mzc3MGZmODM5NjMyMDAyZTAzNThmMSIsIl9vcmdhbml6YXRpb25JZCI6IiIsImV4cCI6MTY3NTI5OTQyNywiaWF0IjoxNjc0Njk0NjI3LCJyZXNvdXJjZSI6Ii9zdG9yYWdlLzMxMmwzMWQzMjdhZmMyNTk4NjFmYzk3MmYyMzMxYTdmZjllMCJ9.nfpv5QmzAa6E3gSBRUw9kFfDL77NqRF0uUV18wqU3p4&download=2_%E4%BA%A4%E6%8D%A2%E6%9C%BA.jpg "")
+
+![](https://tcs.teambition.net/storage/312l45f366dd5d9638c0b9e89890787bd993?Signature=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJBcHBJRCI6IjU5Mzc3MGZmODM5NjMyMDAyZTAzNThmMSIsIl9hcHBJZCI6IjU5Mzc3MGZmODM5NjMyMDAyZTAzNThmMSIsIl9vcmdhbml6YXRpb25JZCI6IiIsImV4cCI6MTY3NTI5OTQyNywiaWF0IjoxNjc0Njk0NjI3LCJyZXNvdXJjZSI6Ii9zdG9yYWdlLzMxMmw0NWYzNjZkZDVkOTYzOGMwYjllODk4OTA3ODdiZDk5MyJ9.vrCG_9fWl_zDQT2TAj3Vs5QEYsZn8lznGZk6wTVJKTk&download=2_%E4%BA%A4%E6%8D%A2%E6%9C%BA%E5%B9%B6%E5%8F%91%E9%80%9A%E4%BF%A1.jpg "")
+
+1.2.3 **路由器** 
+
+严格来说路由器是工作在广域网中的网络设备，用于连接不同结构的网络，比如局域网和无线网络。集线器和交换机只能连接同结构的网络。路由器一个端口下的广播帧不会转发到其他端口，从而隔离广播域，有效避免了广播风暴。其缺点是路由转发过程比较繁琐，会造成网络延时，降低传输效率，甚至成为网络带宽瓶颈。
+
+|     | 家用桌面路由器 |
+| --- | ------- |
+|     | 骨干级路由器  |
+
+> **区分** 集线器、交换机、路由器在外形上有些相似，但内部结构完全不同。集线器已经基本淘汰。骨干级路由器价格相对昂贵，一般用于大型网络。中小型局域网（数百台机器）中用的最多的网络设备是交换机。家庭和办公室最常用的网络设备是家用桌面路由器，可以连接网线和wifi。交换机不能互联无线网络，路由器可以互联任何类型的网络桌面路由器的典型特征是有天线（有的内置），有wifi
+
+2. 端系统
+
+端系统指接入局域网的主机及主机上运行的程序，包括PC、Pad、手机及其智能设备
+
+3. 网络拓扑
+
+人们在研究组网技术时发现，计算机或网络设备具体放到哪个房间，哪个角落不是最重要的因素，这些计算机和设备通过什么形式连接起来更为关键。所以在计算机网络中，人们往往忽略设备的物理位置，而只考虑设备间的连接关系，通过这种途径刻画出来的网络体系结构叫做网络拓扑。
+
+> **拓扑学**(topology)数学领域的一个分支，是研究几何图形或空间在连续改变形状后还能保持不变的一些性质的学科。它只考虑物体间的位置关系而不考虑它们的形状和大小。哥尼斯堡七桥问题，多面体的欧拉定理，四色问题，一笔画问题都是拓扑学发展史上的重要问题。**拓扑学的欧拉定理** 如果一个的顶点数是v、棱数是e、面数是f，那么它们总有这样的关系：f+v-e=2。
+
+网络拓扑是用点和线描述网络结构的表示方法。一般将计算机和网络设备抽象为节点，传输介质抽象为线，不考虑实际的物理位置，只考虑其点、线关系。典型的网络拓扑类型有总线型拓扑、星型拓扑、环形拓扑、网状拓扑。其中星型拓扑使用最为广泛。
+
+**星型拓扑**是最流行的局域网拓扑结构，其基本特点如下：
+
+1. 局域网中每台机器通过一条单独的线连接到中心节点
+
+1. 优点：便于网络集中布线，单点故障不会影响其他节点
+
+1. 缺点：中心节点故障会影响所有连接到该中心节点的机器 ​                        星型拓扑示意图**问题：**为什么不能两台机器两两互联？网络规模会按指数增长，网络中有n台机器，两两互联会有n(n-1)/2条网线，100台机器互联会有近5000条网线。
+
+三、互联网接入方式——连入Internet的方式
+
+局域网的最终目的是连入Internet，很多教科书从技术上介绍接入技术，类型比较多，也比较复杂。这里我们只看在几种常见的场景下如何接入互联网。
+
+3.1 局域网接入
+
+ 场景：学校、单位
+
+
+
+ 通过网线或无线接入单位的局域网（交换机），实现上网
+
+3.2 拨号连接
+
+场景：家庭
+
+通过Modem（调制解调器）连接电话线上网（ADSL）
+
+3.3 光纤+LAN接入
+
+场景：家庭、小区、学校、单位（主流接入方式）
+
+
+
+光纤到楼，光纤入户，需要光电转换设备（光猫）
+
+3.4 无线网络
+
+移动互联的兴起促使人们对无线网络的依赖越来越多。根据覆盖地域范围可以将无线网络分三类
+
+1. **无线局域网：** 802.11系列的wifi技术
+
+1. **无线城域网：** 802.16系列的WiMAX技术——全球微波互联接入
+
+1. **无线广域网：** 移动通信中的3G、4G、5G技术
+
+wifi——无线保真技术
+
+wifi既是一种无线网络技术，又是一种商业品牌。1999年成立了wifi联盟，负责在全球范围内推行wifi产品的兼容性认证，凡是符号wifi标准的产品可以与其他无线技术标准相兼容。
+
+> 此“5G”非彼“5G”主流wifi标准为802.11a/b/g/n工作频率：2.4G，5G此处的5G指wifi工作频率，不要与移动通信中的4G、5G网络相混淆
+
+参考
+
+部分图片引自 网易公开课：华南师范大学公开课《信息社会传奇——计算机网络》 [http://open.163.com/special/cuvocw/jisuanjiwangluo.html](http://open.163.com/special/cuvocw/jisuanjiwangluo.html)
